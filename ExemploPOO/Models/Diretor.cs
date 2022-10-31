@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace ExemploPOO.Models
 {
-    public class Professor : Pessoa
+    public class Diretor : Professor
     {
-        public double Salario { get; set; }
         public override void Apresentar()
         {
-            Console.WriteLine($"Olá, Sou professor {Nome} meu salario é {Salario}");
+            Console.WriteLine($"Olá, Sou diretor {Nome} meu salario é {Salario}");
         }
     }
 }

@@ -1,27 +1,24 @@
 ﻿using ExemploPOO.Models;
-
+using ExemploPOO.Interfaces;
 namespace ExemploPOO
 {
     class Program 
     {
         static void Main(string[] args)
         {
-
-            Corrente conta = new Corrente();
-            conta.Creditar(100);
-            conta.ExibirSaldo();
-
-
-
-
+           ICalculadora Calc = new Calculadora();
+           System.Console.WriteLine(Calc.Dividir(10 , 3));       
+           
+            // Corrente conta = new Corrente();
+            // conta.Creditar(100);
+            // conta.ExibirSaldo();
 
 
 
+            // Calculadora calc = new Calculadora();
+            // System.Console.WriteLine("resultado da Primeira soma " + calc.Somar(5,5));
 
-        //    Calculadora calc = new Calculadora();
-        //    System.Console.WriteLine("resultado da Primeira soma " + calc.Somar(5,5));
-
-        //    System.Console.WriteLine("resultado da Segunda soma " + calc.Somar(5,5,5));
+            // System.Console.WriteLine("resultado da Segunda soma " + calc.Somar(5,5,5));
 
 
 
